@@ -23,3 +23,11 @@ students.each {|k, v| students[k] = (v * 1.05).floor}
 students.each do |cohort, number|
 	puts "#{cohort}: #{number} students"
 end
+
+puts "After deleting cohort 2...
+"
+students.tap { |ds| ds.delete(:cohort2) }
+
+students.each do |cohort, number|
+	puts "#{cohort}: #{number} students"
+end
