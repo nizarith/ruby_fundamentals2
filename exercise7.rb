@@ -5,5 +5,13 @@ students = {
 }
 
 students.each do |cohort, number|
-	puts "#{cohort}: #{number} students"
+	puts "#{cohort}: #{number} students".sort
+end
+
+students[:cohort4] = 43
+
+puts "After adding cohort 4..."
+
+students.each do |cohort, number|
+	puts "#{cohort}: #{number} students".sort
 end
