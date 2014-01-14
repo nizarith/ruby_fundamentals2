@@ -1,3 +1,3 @@
-shopping_list = ["chicken", "rice", "soy", "curry"]
+shopping_list = ["* chicken", "* rice", "* soy", "* curry"]
 
 puts shopping_list
