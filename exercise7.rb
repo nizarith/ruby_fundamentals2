@@ -18,7 +18,7 @@ end
 
 puts "Increasing the class sizes by 5%"
 
-students.each {|k, v| students[k.floor] = v * 1.05}
+students.each {|k, v| students[k] = (v * 1.05).floor}
 
 students.each do |cohort, number|
 	puts "#{cohort}: #{number} students"
