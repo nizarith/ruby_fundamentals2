@@ -1,6 +1,7 @@
-shopping_list = ["* carrots", "* toilet paper", "* apples", "* salmon"]
+shopping_list = ["carrots", "toilet paper", "apples", "salmon"]
 
-puts shopping_list
+shopping_list.each{|x| puts "* #{x}"}
+
 # better way to list?
 
 puts "What else would you like to add to your shopping list?"
@@ -21,5 +22,5 @@ puts "The second item in this array is #{item2}"
 puts shopping_list.sort!
 
 puts "There is no salmon here, let's take it off our list."
-shopping_list.delete("* salmon")
+shopping_list.delete("salmon")
 puts shopping_list
