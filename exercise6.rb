@@ -6,7 +6,7 @@ shopping_list.each{|x| puts "* #{x}"}
 
 puts "What else would you like to add to your shopping list?"
 
-a = "* " + gets.chomp
+a = gets.chomp
 shopping_list << a
 # make this a method
 puts shopping_list

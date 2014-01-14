@@ -1,8 +1,9 @@
 puts "What is the temperature in Fahrenheit?"
-ftemp = gets.chomp.to_i
+f = gets.chomp.to_i
 
 def conv(f)
-	puts ((f - 32.0) * 5.0) / 9.0
+	c = ((f - 32.0) * 5.0) / 9.0
+	puts "#{f} in Fahrenheit is #{c} degrees Celsius"
 end
 
-puts conv(ftemp)
+puts conv(f)
