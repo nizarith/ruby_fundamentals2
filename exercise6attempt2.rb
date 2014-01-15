@@ -1,6 +1,7 @@
 shopping_list = ["carrots", "toilet paper", "apples", "salmon"]
 
 class Groceries
+	attr_accessor :shopping_list
 
   def initiate(shopping_list)
     @shopping_list = shopping_list
@@ -33,12 +34,12 @@ class Groceries
   end
 
   def add_item
-  	item2 = @shopping_list[1]
+  	@shopping_list[1] = "item2"
     puts "The second item in this array is #{item2}"
   end
 
   def sort_list
-  	puts shopping_list.sort!
+  	puts @shopping_list.sort!
   end
 
   def delete_salmon
@@ -49,5 +50,3 @@ class Groceries
 end
 
 list = Groceries.new
-
-list.add_item
