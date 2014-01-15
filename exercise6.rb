@@ -1,15 +1,17 @@
 shopping_list = ["carrots", "toilet paper", "apples", "salmon"]
 
-shopping_list.each{|x| puts "* #{x}"}
+class Groceries
 
-# better way to list?
+  def initiate(shopping_list)
+    @shopping_list = shopping_list
+end 
 
 puts "What else would you like to add to your shopping list?"
+    a = gets.chomp
+    shopping_list << a
+    puts shopping_list
 
-a = gets.chomp
-shopping_list << a
-# make this a method
-puts shopping_list
+shopping_list.each{|x| puts "* #{x}"}
 
 puts "The number of items in this list is " + shopping_list.length.to_s
 
